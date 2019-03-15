@@ -1,0 +1,30 @@
+.about {
+    background-color: $dark-color;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10%;
+}
+
+.aboutPhotoContainer {
+    margin-top: 5%;
+    padding-top: 25%;
+}
+
+.aboutPhotoContainer img {
+    width: 80%;
+}
+
+.aboutText {
+    h2 {
+        @include fontTitle(1.8rem);
+    }
+
+    p {
+        @include fontText(1rem);
+        text-align: left;
+    }
+}

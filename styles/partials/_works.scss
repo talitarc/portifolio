@@ -1,0 +1,61 @@
+#works {
+    background-color: $second-darkest;
+    padding-top: 25%;
+    padding-bottom: 10%;
+}
+
+.works {
+    background-color: $dark-color;
+
+    h2 {
+        @include fontTitle(1.6rem);
+    }
+
+    h3 {
+        @include fontTitle(1rem);
+    }
+
+    p {
+        @include fontText(1rem);
+        text-align: left;
+    }
+
+    a {
+        padding: 10%;
+    }
+
+    a:hover,
+    a:focus,
+    a:focus-within {
+    font-size: 2.5rem;
+    }
+}
+
+.workContainer {
+    padding: 10%;
+}
+
+.workLinks,
+.workSkills {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20%;
+}
+
+.techIcons {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+
+    font-size: 2rem;
+}
+
+.workSkills ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+
+    li {
+        text-align: center;
+    }
+}

@@ -1,0 +1,64 @@
+#contact {
+    background-color: $dark-color;
+    padding-bottom: 10%;
+}
+
+.contact {
+    background-color: $second-darkest;
+    padding: 10%;
+
+    h3 {
+        @include fontTitle(1rem);
+    }
+
+    a {
+        padding: 10%;
+        font-size: 2rem;
+    }
+
+    a:hover,
+    a:focus,
+    a:focus-within {
+    font-size: 2.5rem;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .email {
+        font-size: 1rem;
+        padding: 10% 0;
+    }
+
+    .email:hover,
+    .email:focus,
+    .email:focus-within {
+        font-size: 1rem;
+    }
+}
+
+form {
+    @include fontText(1rem);
+
+    margin-top: 5%;
+
+    label {
+        visibility: hidden;
+    }
+
+    input[type='text'],
+    input[type='email'],
+    textarea {
+        width: 100%;
+    }
+
+    textarea {
+        resize: none;
+        border-radius: 2px;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+}

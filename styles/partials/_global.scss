@@ -1,0 +1,52 @@
+$dark-color: #000;
+$second-darkest: #2e2e2e;
+$light-color: #fff;
+$neon-color: #00ff38;
+// $second-neon: #00d12e;
+
+@mixin fontTitle($sizeValue) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: $sizeValue;
+}
+
+@mixin fontText($sizeValue) {
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    font-size: $sizeValue;
+}
+
+body {
+    font-size: 125%;
+    background-color: $dark-color;
+    color: $light-color;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tabletOnly {
+    display: none;
+}
+
+main {
+    background-color: $second-darkest;
+}
