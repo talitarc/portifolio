@@ -89,23 +89,46 @@
         padding: 5%;
         margin: 5%;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-wrap: wrap;
     }
 
-    .workContainer:nth-of-type(2) {        
-        .workPhotoContainer {
-            order: 3;
+    // .workContainer:nth-of-type(2) {        
+    //     .workPhotoContainer {
+    //         // order: ;
+    //     }
+    // }
+
+    .workPhotoContainer {
+        margin: 1% 2% 0 0;
+        flex: 0 1 40%;
+
+        img {
+            width: 100%;
         }
     }
 
-    .workPhotoContainer,
     .workText {
-        flex: 1 0 50%;
+        flex: 0 1 50%;
+
+        h2 {
+            margin-top: 0;
+        }
     }
 
+
     .workIcons {
-        flex: 0 1 100%;
+        flex: 0 0 50%;
+        justify-self: flex-end;
+        align-self: flex-end;
+
+        display: flex;
+        justify-content: space-between;
+
+        .workSkills {
+            margin-top: 0;
+        }
     }
 }

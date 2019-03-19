@@ -63,7 +63,7 @@ main {
     animation: neon 1.5s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes neon {
+@keyframes neon {
     from {
       text-shadow: 0 0 10px #001806, 0 0 20px #001806, 0 0 30px #001806, 0 0 40px #00741a, 0 0 70px #00741a, 0 0 80px #00741a, 0 0 100px #00741a, 0 0 150px #00741a;
     }

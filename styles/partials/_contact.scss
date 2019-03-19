@@ -177,6 +177,8 @@ form {
 
         h3 {
             @include fontTitle(2rem);
+
+            margin-top: 1%;
         }
 
         a {

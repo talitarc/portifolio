@@ -224,6 +224,15 @@ main {
   }
 }
 
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #001806, 0 0 20px #001806, 0 0 30px #001806, 0 0 40px #00741a, 0 0 70px #00741a, 0 0 80px #00741a, 0 0 100px #00741a, 0 0 150px #00741a;
+  }
+  to {
+    text-shadow: 0 0 5px #001806, 0 0 10px #001806, 0 0 15px #001806, 0 0 20px #00741a, 0 0 35px #00741a, 0 0 40px #00741a, 0 0 50px #00741a, 0 0 75px #00741a;
+  }
+}
+
 @media (min-width: 1000px) {
   .mobileOnly {
     display: none;
@@ -670,30 +679,52 @@ nav a[tabindex]:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .workContainer:nth-of-type(2) .workPhotoContainer {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+  .workPhotoContainer {
+    margin: 1% 2% 0 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
   }
-  .workPhotoContainer,
+  .workPhotoContainer img {
+    width: 100%;
+  }
   .workText {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 50%;
-            flex: 1 0 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+  .workText h2 {
+    margin-top: 0;
   }
   .workIcons {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    justify-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .workIcons .workSkills {
+    margin-top: 0;
   }
 }
 
@@ -915,6 +946,7 @@ form input[type='submit']:focus-within {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 2rem;
+    margin-top: 1%;
   }
   .contact a {
     font-size: 2.5rem;
