@@ -1,0 +1,16 @@
+footer {
+    background-color: $second-darkest;
+    width: 100%;
+
+    @include fontTitle(1rem);
+    text-align: center; 
+}
+
+footer div {
+    p {
+        span {
+            display: inline-block;
+            transform: rotate(180deg);
+        }
+    }
+}

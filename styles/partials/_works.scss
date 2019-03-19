@@ -4,9 +4,12 @@
     padding-bottom: 10%;
 }
 
-.works {
+.workContainer {
     background-color: $dark-color;
+    padding: 25% 10% 10% 10%;
+}
 
+.works {
     h2 {
         @include fontTitle(1.6rem);
     }
@@ -21,25 +24,24 @@
     }
 
     a {
-        padding: 10%;
+        padding: 5% 10%;
     }
 
-    a:hover,
-    a:focus,
-    a:focus-within {
+    .workLinks a:hover,
+    .workLinks a:focus,
+    .workLinks a:focus-within {
     font-size: 2.5rem;
     }
-}
-
-.workContainer {
-    padding: 10%;
 }
 
 .workLinks,
 .workSkills {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20%;
+}
+
+.workSkills {
+    margin-top: 5%;
 }
 
 .techIcons {
@@ -54,8 +56,56 @@
     display: flex;
     justify-content: space-around;
     padding: 0;
+    margin: 0;
 
     li {
         text-align: center;
+    }
+}
+
+.nextSession {
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    #works {
+        padding-top: 7%;
+    }
+
+    .works {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .nextSession {
+            align-self: flex-end;
+            justify-self: center;
+            width: 100%;
+        }
+    }
+
+    .workContainer {
+        padding: 5%;
+        margin: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .workContainer:nth-of-type(2) {        
+        .workPhotoContainer {
+            order: 3;
+        }
+    }
+
+    .workPhotoContainer,
+    .workText {
+        flex: 1 0 50%;
+    }
+
+    .workIcons {
+        flex: 0 1 100%;
     }
 }

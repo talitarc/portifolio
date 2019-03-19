@@ -33,3 +33,18 @@
         padding: 5%;
     }
 }
+
+@media (min-width: 1000px) {
+    #skills {
+        padding-top: 10%;
+    }
+
+    .skills {
+        li {
+            padding: 2% 5%;
+        }
+        ul i {
+            font-size: 2.5rem;
+        }
+    }
+}
