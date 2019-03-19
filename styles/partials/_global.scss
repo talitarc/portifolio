@@ -1,7 +1,7 @@
 $dark-color: #000;
 $second-darkest: #2e2e2e;
 $light-color: #fff;
-$neon-color: #00ff38;
+$neon-color: #FD5F00;
 // $second-neon: #00d12e;
 
 @mixin fontTitle($sizeValue) {
@@ -38,7 +38,7 @@ img {
 }
 
 .wrapper {
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -52,15 +52,15 @@ main {
 }
 
 .fa-angle-down {
-    text-decoration: none;
-    box-shadow: #008c1f;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
+    color: $neon-color
+}
 
-    -webkit-animation: neon 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon 1.5s ease-in-out infinite alternate;
-    animation: neon 1.5s ease-in-out infinite alternate;
+.fa-angle-down:hover {
+    color: $light-color;
+}
+
+a:hover {
+    color: $neon-color;
 }
 
 @keyframes neon {
@@ -82,7 +82,7 @@ main {
       }
 
       h2 {
-        @include fontTitle(2rem);
+        @include fontTitle(2.5rem);
       }
 
       p {

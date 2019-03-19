@@ -1,6 +1,13 @@
 #contact {
     background-color: $dark-color;
-    padding: 10% 0;
+    padding: 15% 0;
+
+    .sectionTitle {
+        text-align: center;
+        @include fontTitle(3rem);
+        margin-top: 0;
+    }
+
 }
 
 .contact {
@@ -30,7 +37,7 @@
 
     .email {
         font-size: 1rem;
-        padding: 10% 0;
+        padding: 5% 0;
     }
 
     .email:hover,
@@ -50,35 +57,26 @@
         position: relative;
         background: none;
         border: none;
-        width: 120%;
+        width: 250px;
     }
-      span{
-        display: block;
-
-      }
-      .email::before, .email::after{
-        content:"";
-        width: 0;
-        height: 2px;
-        position: absolute;
-        transition: all 0.2s linear;
-        background: $neon-color;
-      }
+    span{
+      display: block;
+    }
+     .email::after{
+      content:"";
+      width: 0;
+      height: 2px;
+      position: absolute;
+      transition: all 0.2s linear;
+      background: $neon-color;
+    }
       
-      span::before, span::after{
-        content:"";
-        width:2px;
-        height:0;
-        position: absolute;
-        transition: all 0.2s linear;
-        background: $neon-color;
-      }
-      .email:hover::before, .email:hover::after{
-        width: 100%;
-      }
-      .email:hover span::before, .email:hover span::after{
-        height: 100%;
-      }
+    .email:hover::before, .email:hover::after{
+      width: 100%;
+    }
+    .email:hover span::before, .email:hover span::after{
+      height: 100%;
+    }
 
     .email::before, .email::after{
         transition-delay: 0.2s;
@@ -155,6 +153,7 @@ form {
         border: none;
         border-radius: 5px;
         padding: 5% 10%;
+        text-transform: uppercase;
     }
 
     input[type='submit']:hover,
@@ -173,7 +172,7 @@ form {
     .contact {
         display: flex;
         padding: 5%;
-        justify-content: space-between;
+        justify-content: space-around;
 
         h3 {
             @include fontTitle(2rem);
@@ -187,6 +186,10 @@ form {
 
         .email {
             font-size: 1.1rem;
+        }
+
+        i {
+            font-size: 3rem;
         }
 
         a:hover,

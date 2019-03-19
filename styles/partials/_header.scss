@@ -42,18 +42,32 @@ nav {
         flex-grow: 1;
         border: 1px solid white;
         border-radius: 3px;
-        display: block;
-        margin: 0 auto;
+        display: flex;
     }
 
     a {
-        display: inline-block;
-        padding: 20% 25%;
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 1;
+        justify-content: center;
+        align-content: center;
+        height: 3rem;
+
+        i {
+            align-self: center;
+            justify-content: center;
+        }
     }
 
     li:hover {
         border: 1px solid $neon-color;
     }
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .mainTitle {

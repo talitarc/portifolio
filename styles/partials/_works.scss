@@ -2,6 +2,11 @@
     background-color: $second-darkest;
     padding-top: 25%;
     padding-bottom: 10%;
+
+    .sectionTitle {
+        text-align: center;
+        @include fontTitle(3rem);
+    }
 }
 
 .workContainer {
@@ -24,7 +29,7 @@
     }
 
     a {
-        padding: 5% 10%;
+        padding: 0 10%;
     }
 
     .workLinks a:hover,
@@ -70,6 +75,12 @@
 @media (min-width: 1000px) {
     #works {
         padding-top: 7%;
+        position: relative;
+
+        .sectionTitle {
+            @include fontTitle(4rem);
+            margin-bottom: 2%;
+        }
     }
 
     .works {
@@ -77,6 +88,21 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
+        width: 60%;
+        margin-left: 40%;
+
+        h2 {
+            @include fontTitle(2.4rem);
+        }
+
+        p {
+            @include fontText(1.2rem);
+        }
+
+        i {
+            font-size: 3rem;
+        }
+        
 
         .nextSession {
             align-self: flex-end;
@@ -93,13 +119,8 @@
         justify-content: flex-end;
         align-items: flex-start;
         flex-wrap: wrap;
+        z-index: 10;
     }
-
-    // .workContainer:nth-of-type(2) {        
-    //     .workPhotoContainer {
-    //         // order: ;
-    //     }
-    // }
 
     .workPhotoContainer {
         margin: 1% 2% 0 0;
@@ -111,24 +132,41 @@
     }
 
     .workText {
-        flex: 0 1 50%;
-
         h2 {
             margin-top: 0;
         }
     }
 
-
     .workIcons {
-        flex: 0 0 50%;
+        flex: 1 0 60%;
         justify-self: flex-end;
         align-self: flex-end;
 
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
+        
+        .techIcons {
+            display: flex;
+            justify-content: space-between;
+        }
 
         .workSkills {
             margin-top: 0;
+            margin-left: 5%;
         }
+    }
+    
+    .workGif {
+        width: 50%;
+        position: absolute;
+        left: 0;
+    }
+
+    .universeGif {
+        top: 600;
+    }
+
+    .hungryGif {
+        top: 1050;
     }
 }
