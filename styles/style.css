@@ -763,7 +763,7 @@ nav a[tabindex]:focus {
   }
   .workContainer {
     padding: 5%;
-    margin: 5%;
+    margin: 10% 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -825,10 +825,10 @@ nav a[tabindex]:focus {
     left: 0;
   }
   .universeGif {
-    top: 600;
+    top: 700;
   }
   .hungryGif {
-    top: 1050;
+    top: 1230;
   }
 }
 
