@@ -52,7 +52,12 @@ main {
 }
 
 .fa-angle-down {
-    color: $neon-color
+    color: $neon-color;
+    font-size: 4rem;
+}
+
+.nextSession {
+    font-style: 2.5rem;
 }
 
 .fa-angle-down:hover {
@@ -63,30 +68,17 @@ a:hover {
     color: $neon-color;
 }
 
-@keyframes neon {
-    from {
-      text-shadow: 0 0 10px #001806, 0 0 20px #001806, 0 0 30px #001806, 0 0 40px #00741a, 0 0 70px #00741a, 0 0 80px #00741a, 0 0 100px #00741a, 0 0 150px #00741a;
+@media (min-width: 1000px) {
+    .mobileOnly {
+        display: none;
     }
-    to {
-      text-shadow: 0 0 5px #001806, 0 0 10px #001806, 0 0 15px #001806, 0 0 20px #00741a, 0 0 35px #00741a, 0 0 40px #00741a, 0 0 50px #00741a, 0 0 75px #00741a;
+    .tabletOnly {
+        display: flex;
     }
-  }
-
-  @media (min-width: 1000px) {
-      .mobileOnly {
-          display: none;
-      }
-
-      .tabletOnly {
-          display: flex;
-      }
-
-      h2 {
-        @include fontTitle(2.5rem);
-      }
-
-      p {
-        @include fontText(1.1rem);
-      }
-  }
-  
+    h2 {
+      @include fontTitle(2.5rem);
+    }
+    p {
+      @include fontText(1.1rem);
+    }
+}

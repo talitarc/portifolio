@@ -54,57 +54,9 @@
 
     .email{
         display: inline-block;
-        position: relative;
         background: none;
         border: none;
         width: 250px;
-    }
-    span{
-      display: block;
-    }
-     .email::after{
-      content:"";
-      width: 0;
-      height: 2px;
-      position: absolute;
-      transition: all 0.2s linear;
-      background: $neon-color;
-    }
-      
-    .email:hover::before, .email:hover::after{
-      width: 100%;
-    }
-    .email:hover span::before, .email:hover span::after{
-      height: 100%;
-    }
-
-    .email::before, .email::after{
-        transition-delay: 0.2s;
-    }
-    .email span::before, .email span::after{
-        transition-delay: 0s;
-    }
-    .email::before{
-        right: 0;
-        top: 0;
-    }
-    .email::after{
-        left: 0;
-        bottom: 0;
-    }
-    .email span::before{
-        left: 0;
-        top: 0;
-    }
-    .email span::after{
-        right: 0;
-        bottom: 0;
-    }
-    .email:hover::before, .email:hover::after{
-        transition-delay: 0s;
-    }
-    .email:hover span::before, .email:hover span::after{
-        transition-delay: 0.2s;
     }
 }
 
