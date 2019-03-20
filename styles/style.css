@@ -205,6 +205,10 @@ main {
   background-color: #2e2e2e;
 }
 
+main i {
+  font-size: 2.8rem;
+}
+
 .fa-angle-down {
   color: #FD5F00;
   font-size: 4rem;
@@ -846,12 +850,6 @@ nav a[tabindex]:focus {
   font-size: 2rem;
 }
 
-.contact a:hover,
-.contact a:focus,
-.contact a:focus-within {
-  font-size: 2.5rem;
-}
-
 .contact ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,12 +862,6 @@ nav a[tabindex]:focus {
 .contact .email {
   font-size: 1rem;
   padding: 5% 0;
-}
-
-.contact .email:hover,
-.contact .email:focus,
-.contact .email:focus-within {
-  font-size: 1rem;
 }
 
 .socialLinks {
